@@ -1,0 +1,360 @@
+############### START TRAIN and TEST SIMULATION Elman RNN & Jordan RNN on window size 11 hl 100 ed 50 60 70 80 90 100 ##################
+ 
+####Start simulation date Wed May 31 18:51:26 CEST 2017
+Created the configuration file with the following paramenter: 
+lr: 0.1
+win: 11
+bs: 10
+nhidden: 100
+seed: 1007
+emb_dimension: 50
+nepochs: 50
+Training Elman RNN on DataNLSPARQL/NLSPARQL.trainShuf.Reduced40of90.data:
+--------------------
+model_elman_0.1_11_10_100_50_10
+[learning] epoch 0 >> 100.00% completed in 59.83 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.7897
+NEW BEST: epoch 0 valid F1 36.6                     
+[learning] epoch 1 >> 100.00% completed in 59.68 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.3910
+NEW BEST: epoch 1 valid F1 51.58                     
+[learning] epoch 2 >> 100.00% completed in 58.74 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.2419
+NEW BEST: epoch 2 valid F1 60.42                     
+[learning] epoch 3 >> 100.00% completed in 57.29 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.1590
+
+[learning] epoch 4 >> 100.00% completed in 58.83 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.1138
+NEW BEST: epoch 4 valid F1 62.87                     
+[learning] epoch 5 >> 100.00% completed in 62.81 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0897
+NEW BEST: epoch 5 valid F1 63.01                     
+[learning] epoch 6 >> 100.00% completed in 83.02 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0771
+NEW BEST: epoch 6 valid F1 67.86                     
+[learning] epoch 7 >> 100.00% completed in 74.12 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0617
+
+[learning] epoch 8 >> 100.00% completed in 96.55 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0566
+NEW BEST: epoch 8 valid F1 68.01                     
+[learning] epoch 9 >> 100.00% completed in 97.50 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0444
+NEW BEST: epoch 9 valid F1 71.7                     
+[learning] epoch 10 >> 100.00% completed in 90.22 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0242
+
+[learning] epoch 11 >> 100.00% completed in 91.14 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0151
+
+[learning] epoch 12 >> 100.00% completed in 94.32 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0122
+NEW BEST: epoch 12 valid F1 73.15                     
+[learning] epoch 13 >> 100.00% completed in 67.85 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0221
+
+[learning] epoch 14 >> 100.00% completed in 59.48 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0244
+
+[learning] epoch 15 >> 100.00% completed in 59.23 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0113
+
+[learning] epoch 16 >> 100.00% completed in 59.28 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0186
+
+[learning] epoch 17 >> 100.00% completed in 60.17 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0200
+
+[learning] epoch 18 >> 100.00% completed in 52.35 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0158
+
+[learning] epoch 19 >> 100.00% completed in 47.25 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0173
+
+[learning] epoch 20 >> 100.00% completed in 45.89 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0124
+NEW BEST: epoch 20 valid F1 74.59                     
+[learning] epoch 21 >> 100.00% completed in 41.06 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0028
+
+[learning] epoch 22 >> 100.00% completed in 44.82 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0014
+
+[learning] epoch 23 >> 100.00% completed in 46.93 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0011
+
+[learning] epoch 24 >> 100.00% completed in 49.58 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0009
+
+[learning] epoch 25 >> 100.00% completed in 49.50 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0008
+
+[learning] epoch 26 >> 100.00% completed in 57.77 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0007
+
+[learning] epoch 27 >> 100.00% completed in 46.18 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0007
+
+[learning] epoch 28 >> 100.00% completed in 45.00 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0006
+
+^CTraceback (most recent call last):ted in 47.01 (sec) <<
+  File "rnn_slu/lus/rnn_elman_train.py", line 156, in <module>
+    total_cost += rnn.train(word_batch, label_last_word, s['clr'])
+  File "/home/vagrant/miniconda2/lib/python2.7/site-packages/theano/compile/function_module.py", line 884, in __call__
+    self.fn() if output_subset is None else\
+  File "/home/vagrant/miniconda2/lib/python2.7/site-packages/theano/scan_module/scan_op.py", line 989, in rval
+    r = p(n, [x[0] for x in i], o)
+  File "/home/vagrant/miniconda2/lib/python2.7/site-packages/theano/scan_module/scan_op.py", line 978, in p
+    self, node)
+  File "theano/scan_module/scan_perform.pyx", line 522, in theano.scan_module.scan_perform.perform (/home/vagrant/.theano/compiledir_Linux-3.13--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.13-64/scan_perform/mod.cpp:6179)
+  File "/home/vagrant/miniconda2/lib/python2.7/site-packages/theano/tensor/type.py", line 551, in value_zeros
+    def value_zeros(self, shape):
+KeyboardInterrupt
+-- FINISH TRAINING PHASE Elman RNN IN  1892 sec ---
+Testing Elman RNN:
+-------------------
+Test set performance -- F1:  68.97                     
+-- FINISH TESTING PHASE Elman RNN IN  10 sec ---
+######FINISH TRAIN and TEST SIMULATION Elman RNN IN 1903 sec ######
+Training Jordan RNN:
+--------------------
+model_jordan_0.1_11_10_100_50_10
+[learning] epoch 0 >> 100.00% completed in 60.71 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.7652
+NEW BEST: epoch 0 valid F1 37.58                     
+[learning] epoch 1 >> 100.00% completed in 37.53 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.3681
+NEW BEST: epoch 1 valid F1 51.37                     
+[learning] epoch 2 >> 100.00% completed in 41.40 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.2208
+NEW BEST: epoch 2 valid F1 59.22                     
+[learning] epoch 3 >> 100.00% completed in 44.47 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.1470
+NEW BEST: epoch 3 valid F1 62.85                     
+[learning] epoch 4 >> 100.00% completed in 44.83 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.1032
+
+[learning] epoch 5 >> 100.00% completed in 45.63 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0788
+NEW BEST: epoch 5 valid F1 63.47                     
+[learning] epoch 6 >> 100.00% completed in 45.82 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0597
+NEW BEST: epoch 6 valid F1 71.27                     
+[learning] epoch 7 >> 100.00% completed in 46.69 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0536
+
+[learning] epoch 8 >> 100.00% completed in 45.62 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0479
+
+[learning] epoch 9 >> 100.00% completed in 39.56 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0244
+NEW BEST: epoch 9 valid F1 72.34                     
+[learning] epoch 10 >> 100.00% completed in 41.47 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0178
+
+[learning] epoch 11 >> 100.00% completed in 43.62 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0218
+
+[learning] epoch 12 >> 100.00% completed in 50.68 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0174
+
+[learning] epoch 13 >> 100.00% completed in 49.47 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0134
+
+[learning] epoch 14 >> 100.00% completed in 46.79 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0103
+
+[learning] epoch 15 >> 100.00% completed in 46.39 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0054
+
+[learning] epoch 16 >> 100.00% completed in 40.47 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0042
+
+[learning] epoch 17 >> 100.00% completed in 41.47 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0025
+NEW BEST: epoch 17 valid F1 73.03                     
+[learning] epoch 18 >> 100.00% completed in 43.21 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0020
+NEW BEST: epoch 18 valid F1 74.75                     
+[learning] epoch 19 >> 100.00% completed in 46.70 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0017
+
+[learning] epoch 20 >> 100.00% completed in 53.66 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0015
+
+[learning] epoch 21 >> 100.00% completed in 44.59 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0013
+NEW BEST: epoch 21 valid F1 74.92                     
+[learning] epoch 22 >> 100.00% completed in 40.65 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0012
+NEW BEST: epoch 22 valid F1 75.17                     
+[learning] epoch 23 >> 100.00% completed in 42.69 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0011
+
+[learning] epoch 24 >> 100.00% completed in 39.48 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0010
+
+[learning] epoch 25 >> 100.00% completed in 39.80 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0009
+
+[learning] epoch 26 >> 100.00% completed in 42.05 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0009
+
+[learning] epoch 27 >> 100.00% completed in 47.06 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0008
+
+[learning] epoch 28 >> 100.00% completed in 41.84 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0008
+
+[learning] epoch 29 >> 100.00% completed in 46.17 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0007
+
+[learning] epoch 30 >> 100.00% completed in 42.75 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0007
+
+[learning] epoch 31 >> 100.00% completed in 46.76 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0006
+
+[learning] epoch 32 >> 100.00% completed in 42.65 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0006
+
+[learning] epoch 33 >> 100.00% completed in 51.56 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0006
+
+[learning] epoch 34 >> 100.00% completed in 45.13 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0006
+
+[learning] epoch 35 >> 100.00% completed in 55.68 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0005
+
+[learning] epoch 36 >> 100.00% completed in 51.37 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0005
+
+[learning] epoch 37 >> 100.00% completed in 41.32 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0005
+NEW BEST: epoch 37 valid F1 75.62                     
+[learning] epoch 38 >> 100.00% completed in 39.25 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0005
+
+[learning] epoch 39 >> 100.00% completed in 42.89 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0005
+
+[learning] epoch 40 >> 100.00% completed in 43.66 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0004
+
+[learning] epoch 41 >> 100.00% completed in 60.62 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0004
+
+[learning] epoch 42 >> 100.00% completed in 43.01 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0004
+
+[learning] epoch 43 >> 100.00% completed in 50.73 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0004
+
+[learning] epoch 44 >> 100.00% completed in 64.93 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0004
+
+[learning] epoch 45 >> 100.00% completed in 64.99 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0004
+
+[learning] epoch 46 >> 100.00% completed in 58.24 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0004
+
+[learning] epoch 47 >> 100.00% completed in 60.19 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0004
+
+[learning] epoch 48 >> 100.00% completed in 57.71 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0003
+
+[learning] epoch 49 >> 100.00% completed in 46.72 (sec) <<
+Learning rate: 0.1000
+Average Training Cost: 0.0003
+
+BEST RESULT: epoch 49 valid F1 75.62 with the model model_jordan_0.1_11_10_100_50_10
+-- FINISH TRAINING PHASE Jordan RNN IN  2393 sec ---
+Testing Jordan RNN:
+-------------------
+Test set performance -- F1:  72.1                     
+-- FINISH TESTING PHASE Jordan RNN IN  11 sec ---
+######FINISH TRAIN and TEST SIMULATION Jordan RNN IN 2393 sec ######
+######FINISH simulation date Wed May 31 20:03:02 CEST 2017
