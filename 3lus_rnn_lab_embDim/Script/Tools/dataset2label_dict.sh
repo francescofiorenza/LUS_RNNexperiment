@@ -10,5 +10,5 @@ dataFolder=rnn_slu/data
 
 cat $dataFolder/$trainFileName | cut -f 2 |
 sed '/^ *$/d' |sort| uniq |
-sed 's/^ *//g' |nl --number-format=ln|sed '1 i 0\t<UNK>'|
+sed 's/^ *//g' |awk '{print (NR-1),$0}'|
 awk '{OFS="\t";  print $2,$1}'
